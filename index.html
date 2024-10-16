@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <h1>Contact Us!</h1>
+
+      <label for="type-name">Name:</label>
+      <br />
+      <input
+        id="type-name"
+        type="text"
+        placeholder="Petras"
+        required
+        minlength="3"
+        maxlength="20"
+      />
+      <br />
+
+      <label for="type-email">Email:</label>
+      <br />
+      <input
+        id="type-email"
+        type="email"
+        placeholder="petras@petras.lt"
+        required
+      />
+      <br />
+
+      <label for="type-number">Reference Number:</label>
+      <br />
+      <input id="type-number" type="number" placeholder="12213" />
+      <br />
+
+      <label for="type-text">Your message goes here...</label>
+      <br />
+      <textarea rows="1" cols="40" id="type-text"></textarea>
+      <br />
+
+      <label for="type-country">Šalis</label>
+      <select id="type-country">
+        <option value="">Lietuva</option>
+        <option value="">Latvia</option>
+        <option value="">Estija</option>
+        <option value="">Lenkija</option>
+        <option value="">Vokietija</option>
+      </select>
+      <br />
+
+      <label for="">Jūsų lytis</label>
+      <br />
+      <input id="type-lytis" name="lytis" type="radio" />
+      <label for="">Vyras</label>
+      <input id="type-lytis" name="lytis" type="radio" />
+      <label for="">Moteris</label>
+      <input id="type-lytis" name="lytis" type="radio" />
+      <label for="">Neatskleisiu</label>
+      <br />
+
+      <button type="submit">Send!</button>
+    </form>
+  </body>
+</html>
